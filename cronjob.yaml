@@ -82,7 +82,7 @@ spec:
                 type: ''
             - name: etcd-backup
               persistentVolumeClaim:
-                claimName: etcd-backup
+                claimName: pvc-nfs
             - name: etcd-backup-script
               configMap:
                 name: etcd-backup-script
