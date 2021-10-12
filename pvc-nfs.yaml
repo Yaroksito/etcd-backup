@@ -1,5 +1,6 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
+namespace: etcd-backup
 metadata:
   name: pvc-nfs
 spec:
@@ -9,4 +10,4 @@ spec:
     requests:
       storage: 2Gi
   volumeName: pv-nfs
-  storageClassName: ""
+  storageClassName: etcd-backup
