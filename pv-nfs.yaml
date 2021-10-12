@@ -8,6 +8,6 @@ spec:
   accessModes:
   - ReadWriteOnce
   nfs:
-    path: /tmp
-    server: 172.17.0.2
+    path: /mnt/etcd-backup
+    server: 192.168.1.4 
   persistentVolumeReclaimPolicy: Retain
